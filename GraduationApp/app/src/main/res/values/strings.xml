@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GraduationApp</string>
+    <string name="full_name">Full_Name</string>
+    <string name="course_name">Course_Nme</string>
+    <string name="submit_your_full_name">Submit your full name</string>
+    <string name="student_full_name">Student-full-name</string>
+    <string name="submit_your_course_name">Submit your course name</string>
+    <string name="course_title_name">course-title-name</string>
+    <string name="submit">Submit</string>
+    <string name="todo">TODO</string>
+</resources>

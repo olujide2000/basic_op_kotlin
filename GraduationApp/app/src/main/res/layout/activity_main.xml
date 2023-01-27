@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:textStyle="bold"
+        android:textColorHint="@color/purple_700"
+        android:layout_margin="20dp"
+        android:autofillHints="full name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/course_name"
+        android:textStyle="bold"
+        android:textColorHint="@color/purple_700"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:autofillHints="full name" />
+    <TextView
+        android:id="@+id/txt_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_your_full_name"
+        android:textStyle="italic"
+        android:hint="@string/student_full_name"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/teal_700"/>
+    <TextView
+        android:id="@+id/txt_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_your_course_name"
+        android:textStyle="italic"
+        android:hint="@string/course_title_name"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/teal_700"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textStyle="bold"
+        android:layout_margin="20dp" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img"
+        android:contentDescription="@string/todo" />
+
+
+</LinearLayout>
