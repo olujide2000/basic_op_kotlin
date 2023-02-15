@@ -9,6 +9,6 @@
     <string name="submit">Submit</string>
     <string name="todo">TODO</string>
     <string name="welcome_to_activity_2">Welcome to Activity 2</string>
-    <string name="list">List</string>
     <string name="item_list">Item list</string>
+    <string name="grad_list">Grad List</string>
 </resources>

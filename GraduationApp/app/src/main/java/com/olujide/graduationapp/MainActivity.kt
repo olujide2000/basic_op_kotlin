@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,9 +14,17 @@ class MainActivity : AppCompatActivity() {
 
         val btnSubmit = findViewById<Button>(R.id.btn_submit)
         val btnList = findViewById<Button>(R.id.btn_list)
+        val etName = findViewById<EditText>(R.id.full_name)
+        val etCourse = findViewById<EditText>(R.id.Course_name)
+
+        val et_Name = etName.text.toString()
+        val et_Course = etCourse.text.toString()
 
         btnSubmit.setOnClickListener {
-            startActivity(Intent(this, GraduationActivity::class.java))
+            val intent = Intent(this, GraduationActivity::class.java)
+            intent.putExtra("name", et_Name)
+            intent.putExtra("course", et_Course)
+            startActivity(intent)
         }
 
         btnList.setOnClickListener {

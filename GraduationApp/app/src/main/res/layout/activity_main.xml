@@ -28,26 +28,7 @@
         android:layout_margin="20dp"
         android:inputType="text"
         android:autofillHints="full name" />
-    <TextView
-        android:id="@+id/txt_full_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/submit_your_full_name"
-        android:textStyle="italic"
-        android:hint="@string/student_full_name"
-        android:layout_margin="20dp"
-        android:textSize="22sp"
-        android:textColorHint="@color/teal_700"/>
-    <TextView
-        android:id="@+id/txt_course_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/submit_your_course_name"
-        android:textStyle="italic"
-        android:textSize="22sp"
-        android:hint="@string/course_title_name"
-        android:layout_margin="20dp"
-        android:textColorHint="@color/teal_700"/>
+
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
@@ -55,19 +36,21 @@
         android:text="@string/submit"
         android:textStyle="bold"
         android:layout_margin="20dp" />
-    <Button
-        android:id="@+id/btn_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/list"
-        android:textStyle="bold"
-        android:layout_margin="20dp" />
+
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
         android:src="@drawable/img"
         android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grad_list"
+        android:textStyle="bold"
+        android:layout_margin="20dp" />
 
 
 </LinearLayout>
