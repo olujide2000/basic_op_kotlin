@@ -1,21 +1,28 @@
 package com.olujide.graduationapp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class GraduationActivity : AppCompatActivity() {
+    @SuppressLint("SetTextI18n", "SuspiciousIndentation", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_graduation)
 
-        val txtName =  findViewById<TextView>(R.id.txt_full_name)
-        val txtCourse = findViewById<TextView>(R.id.txt_course_name)
+        val txtName =  findViewById<TextView>(R.id.tx_full_name)
+        val txtCourse = findViewById<TextView>(R.id.tx_course_name)
 
-        val tv_Name = intent.getStringExtra("name")
-        val tv_Course = intent.getStringExtra("course")
+        val intent = intent
 
-        txtName.setText(tv_Name)
-        txtCourse.setText(tv_Course)
+
+        val txName = intent.getStringExtra("Name")
+        val txCourse = intent.getStringExtra("Course")
+
+
+        txtName.text = "Name: $txName"
+        txtCourse.text = "Course: $txCourse"
+
     }
 }

@@ -11,4 +11,9 @@
     <string name="welcome_to_activity_2">Welcome to Activity 2</string>
     <string name="item_list">Item list</string>
     <string name="grad_list">Grad List</string>
+    <string name="_123">123</string>
+    <string name="aaa">aaa</string>
+    <string name="home">home</string>
+    <string name="upload">Upload</string>
+    <string name="graduation_list">Graduation List</string>
 </resources>

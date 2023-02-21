@@ -3,6 +3,8 @@ package com.olujide.graduationapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 
@@ -17,19 +19,35 @@ class MainActivity : AppCompatActivity() {
         val etName = findViewById<EditText>(R.id.full_name)
         val etCourse = findViewById<EditText>(R.id.Course_name)
 
-        val et_Name = etName.text.toString()
-        val et_Course = etCourse.text.toString()
-
         btnSubmit.setOnClickListener {
+            val name = etName.text.toString()
+            val course = etCourse.text.toString()
             val intent = Intent(this, GraduationActivity::class.java)
-            intent.putExtra("name", et_Name)
-            intent.putExtra("course", et_Course)
+            intent.putExtra("Name", name)
+            intent.putExtra("Course", course)
             startActivity(intent)
         }
 
         btnList.setOnClickListener {
-            startActivity(Intent(this, ListActivity::class.java))
+            //startActivity(Intent(this, ListActivity::class.java))
+            val name = etName.text.toString()
+            val course = etCourse.text.toString()
+            val intent = Intent(this, ListActivity::class.java)
+            intent.putExtra("Name", name)
+            intent.putExtra("Course", course)
+            startActivity(intent)
         }
+    }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.grad_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.ic_list -> startActivity(Intent(this, ListActivity::class.java))
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

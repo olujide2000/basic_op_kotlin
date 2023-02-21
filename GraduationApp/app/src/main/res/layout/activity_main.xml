@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:hint="@string/full_name"
         android:textStyle="bold"
-        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700"
         android:layout_margin="20dp"
-        android:autofillHints="full name"
+
         android:inputType="text" />
 
     <EditText
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/course_name"
         android:textStyle="bold"
-        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700"
         android:layout_margin="20dp"
         android:inputType="text"
         android:autofillHints="full name" />
